@@ -1,0 +1,18 @@
+label
+{
+    text-align: center;
+}
+.termine
+{
+    text-decoration: line-through;
+}
+.button-vert {
+    background-color: green;
+    color: white;
+  }
+  
+  .button-rouge {
+    background-color: red;
+    color: white;
+  }
+  
