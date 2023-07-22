@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactApp</title>
+    <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="cordova.js"></script>
+</head>
+<body>
+    <div class="bod" data-role="page">
+        <div data-role="header">
+            <h1>Contact App</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <a href="#" data-role="button" data-iconpos="right" data-icon="plus" id="ajoutBtn">Ajouter</a>
+
+            <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Rechercher" class="list" id="contactList">
+                <!-- Les contacts seront ajoutés dynamiquement ici -->
+            </ul>
+
+            <!-- Formulaire d'ajout de contact -->
+            <div id="addContactForm" style="display: none;">
+                <h2>Ajouter un nouveau contact</h2>
+                <input type="text" id="newName" placeholder="Nom & Prénom(s)">
+                <input type="tel" id="newPhone" placeholder="Numéro de téléphone">
+                <button id="enregistrerBtn">Enregistrer</button>
+            </div>
+        </div>
+
+        <!--LE PIED DE LA PAGE -->
+    </div>
+    
+    <div data-role="footer" data-position="fixed">
+      <h1>M1IA &copy; 2023</h1>
+    </div>
+    </div>
+</body>
+</html>
